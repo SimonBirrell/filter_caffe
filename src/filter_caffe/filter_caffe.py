@@ -24,7 +24,7 @@ PROBABILITY_THRESHOLD = 0.5
 # [0.0115129 - n04125021 safe]
 #
 def filter_caffe_message(caffe_message):
-    lines = caffe_message.splitlines()
+    lines = str(caffe_message).splitlines()
     if (len(lines) == 0):
         return None
     first_line = lines[0]
